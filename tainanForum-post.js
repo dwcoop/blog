@@ -25,7 +25,7 @@ function publish() {
 function submit() {
   var content = editor.getData(),
     title = $("#inputPostTitle").val(),
-    labels = [$("#selectLabel").val()],
+    labels = $("#selectLabel").val(),
     publishTime = new Date().toISOString(),
     name = window.AuthedUser.displayName;
 
