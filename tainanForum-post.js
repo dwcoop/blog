@@ -53,10 +53,10 @@ function submit() {
     content: content,
     labels: labels,
     name: name
-  }).then(function(response) {
+  }).done(function(response) {
     alert(response.status);
     location.href=response.link;
-  }).error(function(error) {
+  }).fail(function(error) {
     alert(String(error))
   })
 }
