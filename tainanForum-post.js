@@ -54,6 +54,7 @@ function submit() {
     labels: labels,
     name: name
   }).done(function(response) {
+    response=JSON.parse(response)
     alert(response.status);
     location.href=response.link;
   }).fail(function(error) {
